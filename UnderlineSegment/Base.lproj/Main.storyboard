@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestSegment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Dlf-L7-eCu">
+                                <rect key="frame" x="20" y="56" width="335" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="dDP-38-zDp"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                                <connections>
+                                    <action selector="showComponent:" destination="BYZ-38-t0r" eventType="valueChanged" id="Erp-Xd-svV"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3Q-bI-Y1i">
+                                <rect key="frame" x="20" y="105" width="335" height="522"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dlf-L7-eCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSs-zX-byr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O3Q-bI-Y1i" secondAttribute="bottom" constant="40" id="HxV-dK-IS9"/>
+                            <constraint firstItem="O3Q-bI-Y1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jnb-0I-BCx"/>
+                            <constraint firstItem="Dlf-L7-eCu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="Ubh-KG-PSW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dlf-L7-eCu" secondAttribute="trailing" constant="20" id="ciD-WZ-Gkf"/>
+                            <constraint firstItem="Dlf-L7-eCu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iuz-eB-3qa"/>
+                            <constraint firstItem="O3Q-bI-Y1i" firstAttribute="top" secondItem="Dlf-L7-eCu" secondAttribute="bottom" constant="22" id="sFs-eN-Sma"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O3Q-bI-Y1i" secondAttribute="trailing" constant="20" id="vR6-Ci-LPT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="O3Q-bI-Y1i" id="wTc-l8-TSe"/>
+                        <outlet property="segmentedControl" destination="Dlf-L7-eCu" id="Kdr-Ov-mQS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-574" y="145"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G0d-Iz-CrO">
+            <objects>
+                <viewController storyboardIdentifier="RedVC" id="M3b-vr-hHm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sy4-Lg-aqW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.1208583191" blue="0.17315381769999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4O1-hA-taW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dkg-z3-h5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="-118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f7m-UL-WdO">
+            <objects>
+                <viewController storyboardIdentifier="BlueVC" id="rq3-vu-VxE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7wL-br-bpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="gQM-SQ-4lV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7d-Rb-jbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="-173"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mbf-2x-ZnD">
+            <objects>
+                <viewController storyboardIdentifier="GreenVC" id="a8L-po-cC2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I9L-Wh-uyl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.55775779489999999" green="0.76791667939999997" blue="0.26662614940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="MM3-WD-EnY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMf-jX-tr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="761"/>
+        </scene>
+    </scenes>
+</document>

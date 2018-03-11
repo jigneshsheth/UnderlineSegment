@@ -12,6 +12,7 @@
 		D0090C342053403A00B5F83D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0090C322053403A00B5F83D /* Main.storyboard */; };
 		D0090C362053403B00B5F83D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0090C352053403B00B5F83D /* Assets.xcassets */; };
 		D0090C392053403B00B5F83D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0090C372053403B00B5F83D /* LaunchScreen.storyboard */; };
+		D0090C4120534C6C00B5F83D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0090C4020534C6C00B5F83D /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D0090C352053403B00B5F83D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0090C382053403B00B5F83D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0090C3A2053403B00B5F83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0090C4020534C6C00B5F83D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,8 @@
 		D0090C222053403A00B5F83D = {
 			isa = PBXGroup;
 			children = (
-				D0090C2D2053403A00B5F83D /* TestSegment */,
+				D0090C4020534C6C00B5F83D /* Extension.swift */,
+				D0090C2D2053403A00B5F83D /* UnderlineSegment */,
 				D0090C2C2053403A00B5F83D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +54,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0090C2D2053403A00B5F83D /* TestSegment */ = {
+		D0090C2D2053403A00B5F83D /* UnderlineSegment */ = {
 			isa = PBXGroup;
 			children = (
 				D0090C2E2053403A00B5F83D /* AppDelegate.swift */,
@@ -61,7 +64,7 @@
 				D0090C372053403B00B5F83D /* LaunchScreen.storyboard */,
 				D0090C3A2053403B00B5F83D /* Info.plist */,
 			);
-			path = TestSegment;
+			path = UnderlineSegment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0090C262053403A00B5F83D /* Build configuration list for PBXProject "TestSegment" */;
+			buildConfigurationList = D0090C262053403A00B5F83D /* Build configuration list for PBXProject "UnderlineSegment" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0090C4120534C6C00B5F83D /* Extension.swift in Sources */,
 				D0090C312053403A00B5F83D /* ViewController.swift in Sources */,
 				D0090C2F2053403A00B5F83D /* AppDelegate.swift in Sources */,
 			);
@@ -281,13 +285,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TNEGV8WUAZ;
-				INFOPLIST_FILE = TestSegment/Info.plist;
+				DEVELOPMENT_TEAM = 2G6RH42E35;
+				INFOPLIST_FILE = "$(SRCROOT)/UnderlineSegment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.overstock.TestSegment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheth.UnderlineSegment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,13 +303,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TNEGV8WUAZ;
-				INFOPLIST_FILE = TestSegment/Info.plist;
+				DEVELOPMENT_TEAM = 2G6RH42E35;
+				INFOPLIST_FILE = "$(SRCROOT)/UnderlineSegment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.overstock.TestSegment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheth.UnderlineSegment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0090C262053403A00B5F83D /* Build configuration list for PBXProject "TestSegment" */ = {
+		D0090C262053403A00B5F83D /* Build configuration list for PBXProject "UnderlineSegment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0090C3B2053403B00B5F83D /* Debug */,
